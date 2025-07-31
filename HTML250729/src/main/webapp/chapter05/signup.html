@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+</head>
+<body>
+	<h1>회원 가입</h1>
+	<hr />
+	<form method="get">
+		<fieldset>
+			<legend>계정 정보</legend>
+			<div>
+				아이디 <input type="text" name="id" required="required">
+			</div>
+			<div>
+				비밀번호 <input type="password" name="pw" required="required">
+			</div>
+			<div>
+				비밀번호 확인 <input type="password" name="pwcheck" required="required">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>프로필</legend>
+			<div>
+				이름 <input type="text" name="name" required="required">
+			</div>
+			<div>
+				생년월일 <input type="number" name="year" placeholder="년" min="1900" max="2100">
+				<select name="month">
+					<option disabled="disabled" selected="selected" hidden="hidden" value="0">월</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+				<input type="number" name="day" min="1" max="31" placeholder="일">
+			</div>
+			<div>
+				<label>성별</label>
+				<input type="radio" name="gender" value="male"/> <label>남</label>
+				<input type="radio" name="gender" value="female"/><label>여</label>
+				<input type="radio" name="gender" value="guitar"/><label>기타</label>
+			</div>
+		</fieldset>
+		<div>
+			<input type="checkbox" name="assignment" required="required"> 이용약관과 개인정보 수집 방침에 동의합니다
+		</div>
+		<input type="submit" value="가입하기">
+	</form>
+</body>
+</html> 
